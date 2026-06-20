@@ -4,5 +4,5 @@ metadata:
   name: auth-service-cm
 data:
   MANAGEMENT_METRICS_TAGS_APPLICATION: auth-service-uat
-  SPRING_PROFILES_ACTIVE: uat
+  SPRING_PROFILES_ACTIVE: "uat"
   DATABASE_URL: "jdbc:postgresql://dpg-d8r3sskvikkc7384gi1g-a.singapore-postgres.render.com:5432/motoshop_db_88dq"
