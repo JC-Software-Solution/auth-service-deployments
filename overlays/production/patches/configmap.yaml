@@ -4,3 +4,4 @@ metadata:
   name: auth-service-cm
 data:
   MANAGEMENT_METRICS_TAGS_APPLICATION: auth-service-uat
+  SPRING_PROFILES_ACTIVE: "prod"

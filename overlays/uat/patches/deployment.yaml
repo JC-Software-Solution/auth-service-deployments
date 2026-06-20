@@ -9,4 +9,14 @@ spec:
       containers:
         - name: auth-service
           image: auth-service-app-image
+          resources:
+            limits:
+              memory: 750Mi
+              cpu: 500m
+            requests:
+              memory: 100Mi
+              cpu: 10m
+          envFrom:
+            - secretRef:
+                name: auth-service-secret
           
