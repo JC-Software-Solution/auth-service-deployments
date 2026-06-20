@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../base
+patches:
+- path: patches/deployment.yaml
+  target:
+    kind: Deployment
+    name: auth-service
+- path: patches/configmap.yaml
+  target:
+    kind: ConfigMap
+    name: auth-service-cm
+images:
+- name: auth-service-app-image
+  newName: jovanie1795/auth-service
+  newTag: 1781920726.2.1
