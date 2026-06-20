@@ -17,6 +17,8 @@ spec:
               memory: 100Mi
               cpu: 10m
           envFrom:
+            - configMapRef:
+                name: auth-service-cm
             - secretRef:
                 name: auth-service-secret
           
