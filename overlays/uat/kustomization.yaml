@@ -14,4 +14,4 @@ patches:
 images:
 - name: auth-service-app-image
   newName: jovanie1795/auth-service
-  newTag: 1782545442.8.1
+  newTag: 1782548495.9.1
